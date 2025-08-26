@@ -3,139 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/espiralFavicon.png" type="image/x-icon">
+
+<!--Fuente para los titulos y subtitulos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
+<!--Fuente para los parrafos y otros textos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Portafolio web | Premium</title>
 </head>
 <body>
 
+    <!--Banner o encabezado-->
     <header class="header">
-        <h1 id="titulo">¡¡Hola!! Bienvenido a mi portafolio</h1>
-        <img src="#" alt="hola">
-        <p>He preparado los mejores proyectos donde te mostrare los servicios que ofrezco y las habilidades que he adquirido con el tiempo.</p>
+        <div class="inicioHijo">
+            <div class="container">
+                <img src="assets/avatar.png" alt="mi foto" width="100px" height="100px" id="avatar">
+                <h1 id="titulo">¡¡Hola!! Bienvenido a mi portafolio</h1>
 
-        <nav class="menu" id="menu">
-            <a href="#Sobre mi">Sobre Mi</a>
-            <a href="#Proyectos">Mis Proyectos</a>
-            <a href="#Servicios">Servicios</a>
-            <a href="#Contactame">Contactame</a>
-        </nav>
+                <p>He preparado los mejores proyectos donde te mostrare los servicios que ofrezco y las habilidades que he adquirido con el tiempo.</p>
+                
+                <nav class="menu">
+                    <a href="#sobre-mi">Sobre Mi</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
-
         <!--Sobre Mi-->
         <section class="sobre-mi" id="sobre-mi">
-            <p class="miDescripcion">¡¡Hola!! Soy Abel Valverde, desarrollador web frontend y te doy la bienvenida a este portafolio personal; donde como mencione antes te mostrare algunos de mis mejores proyectos y los servicios que ofrezco.Actualmente estoy principalmente 
-                enfocado en el diseño funcional y estetico de sitios web modernos,responsivos y optimizados, combinando la creatividad con buenas practicas de desarrollo.
-            </p>
-
-            <p class="miDescripcion">Durante mi trayectoria he trabajado en proyectos personales y colaborativos que abarcan desde paginas informativas hasta tiendas virtuales dinamicas.
-                Mi enfoque se basa en escribir codigo limpio,reutilizable y modular utilizando herramientas como HTML, CSS, y/o preprocesadores de el mismo como SASS, LESS & STYLUS y JavaScript ademas de buenas practicas de Responsive Web Design y otras tecnicas avanzadas de animacion para una mejor experiencia del usuario.
-            </p>
-            <p class="miDescripcion">Aunque he concluido ya algunos cursos de desarrollo web y realizado algunos retos o desafios como proyectos soy una persona autodidacta, constante y orientada a resultados.
-                Me gusta mantenerme actualizado con las ultimas tecnologias y siempre busco mejorar mis habilidades a traves de nuevos retos y proyectos reales.
-            </p>
-            <p class="miDescripcion">Ahora mismo estoy ampliando mi portafolio con proyectos que aplican frameworks modernos, animaciones avanzadas y soluciones pensadas para clientes reales.Mi objetivo es seguir creciendo profesionalmente y 
-                aportar soluciones creativas y funcionales a quienes confien en mi trabajo.¿Te gustaria conocer mas a fondo mis proyectos?Si es asi haz clic en el boton que esta abajo...
-            </p>
-
-            <button>Leer Mas</button>
+            <div class="miFlex">
+                <div class="sobremiHijo">
+                    <h2>Sobre Mi</h2>
+                    <p class="miDescripcion">¡¡Hola!! Soy Abel Valverde, desarrollador web frontend y te doy la bienvenida a este portafolio personal; donde como mencione antes te mostrare algunos de mis mejores proyectos y los servicios que ofrezco.Actualmente estoy principalmente 
+                    enfocado en el diseño funcional y estetico de sitios web modernos,responsivos y optimizados, combinando la creatividad con buenas practicas de desarrollo.
+                    </p>
+                    <br>
+                    <p class="miDescripcion">Durante mi trayectoria he trabajado en proyectos personales y colaborativos que abarcan desde paginas informativas hasta tiendas virtuales dinamicas.
+                    Mi enfoque se basa en escribir codigo limpio,reutilizable y modular utilizando herramientas como HTML, CSS, y/o preprocesadores de el mismo como SASS, LESS & STYLUS y JavaScript ademas de buenas practicas de Responsive Web Design y otras tecnicas avanzadas de animacion para una mejor experiencia del usuario.
+                    </p>
+                    <br>
+                    <p class="miDescripcion">Aunque he concluido ya algunos cursos de desarrollo web y realizado algunos retos o desafios como proyectos soy una persona autodidacta, constante y orientada a resultados.
+                    Me gusta mantenerme actualizado con las ultimas tecnologias y siempre busco mejorar mis habilidades a traves de nuevos retos y proyectos reales.
+                    </p>
+                    <br>
+                    <p class="miDescripcion">Ahora mismo estoy ampliando mi portafolio con proyectos que aplican frameworks modernos, animaciones avanzadas y soluciones pensadas para clientes reales.Mi objetivo es seguir creciendo profesionalmente y 
+                    aportar soluciones creativas y funcionales a quienes confien en mi trabajo.¿Te gustaria conocer mas a fondo mis proyectos?Si es asi haz clic en el boton que esta abajo...
+                    </p>
+                    <button>Leer Mas</button>
+                </div>
+                
+            </div>
+            
         </section>
 
+        <!--Habilidades y servicios-->
+        <section class="habilidades" id="habilidades">
+            <h1>Habilidades y Servicios</h1>
+            <div class="grid-skills">
+                <div class="card-habilidad ">
+                    <img src="assets/htmlLog.jpg" alt="HTML5">
+                    <h3>HTML5</h3>
+                    <p>Maquetado semantico moderno y accesible.Es una de las tecnologias clave en el desarrollo de un sitio web adaptable que es usada 
+                    por la mayoria de desarrolladores y por las mejores empresas.</p>
+                </div>
+               
+                <div class="card-habilidad">
+                    <img src="assets/cssLog.jpg" alt="preprocesadores">
+                    <h3>CSS3 /Stylus / Sass</h3>
+                    <p>CSS3 es la version mas reciente de estilos que permite incorporar tecnicas modernas de diseño y estructura de elementos.Pero Stylus y Sass hacen 
+                    que aplicar estilos sea mas divertido,practico y reutilizable; ya que puedes crear variables,funciones etc que permiten optimizar los estilos y evitar que los estilos 
+                    se sobrecarguen.
+                    </p>
+                </div>
+
+                <div class="card-habilidad">
+                    <img src="assets/jsLog.jpg" alt="JavaScript">
+                    <h3>JS</h3>
+                    <p>Este podria decirse que es el alma de la web ya que la mayoria de los sitios y apps que consumimos hoy dia usan JavaScript ya que hace posible que los sitios sean 
+                        mas intuitivos,interactivos y dinamicos.Incluso muchos frameworks populares lo usan.</p>
+                </div>
+                <div class="card-habilidad">
+                    <img src="assets/rwdLog.jpg" alt="Diseño web adaptable">
+                    <h3>Diseño Responsive</h3>
+                    <p>Esto es clave para que tu pagina y sitio funcione en cualquier dispositivo.Tecnicas como <cite class="tools">Grid , Flexbox y Mobile-First</cite> son esenciales
+                    para que el maquetado del sitio se muestre en diversas pantallas,ademas que en la produccion es mas facil crear la version para movil que para PC.
+                    </p>
+                </div>
+
+                <div class="card-habilidad">
+                    <img src="assets/mantto.jpg" alt="Ayuda y Soporte">
+                    <h3>Mantenimiento</h3>
+                    <p>Todo sitio web necesita mantenimiento,asi que recibiras optimizacion,actualizaciones y soporte continuo para mas seguridad.
+                    </p>
+                </div>
+            </div>
+
+            <section class="servicios">
+                <div class="card">
+                    <div class="vectores">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="75"  height="75"  viewBox="0 0 24 24"  fill="#ff80c0"  class="icon icon-tabler icons-tabler-filled icon-tabler-palette"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2c5.498 0 10 4.002 10 9c0 1.351 -.6 2.64 -1.654 3.576c-1.03 .914 -2.412 1.424 -3.846 1.424h-2.516a1 1 0 0 0 -.5 1.875a1 1 0 0 1 .194 .14a2.3 2.3 0 0 1 -1.597 3.99l-.156 -.009l.068 .004l-.273 -.004c-5.3 -.146 -9.57 -4.416 -9.716 -9.716l-.004 -.28c0 -5.523 4.477 -10 10 -10m-3.5 6.5a2 2 0 0 0 -1.995 1.85l-.005 .15a2 2 0 1 0 2 -2m8 0a2 2 0 0 0 -1.995 1.85l-.005 .15a2 2 0 1 0 2 -2m-4 -3a2 2 0 0 0 -1.995 1.85l-.005 .15a2 2 0 1 0 2 -2" /></svg>
+                        Diseño de Sitios Web
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="vectores">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="75"  height="75"  viewBox="0 0 24 24"  fill="none"  stroke="#ff80c0"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-diamonds"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.831 20.413l-5.375 -6.91c-.608 -.783 -.608 -2.223 0 -3l5.375 -6.911a1.457 1.457 0 0 1 2.338 0l5.375 6.91c.608 .783 .608 2.223 0 3l-5.375 6.911a1.457 1.457 0 0 1 -2.338 0z" /></svg>
+                        Diseño de logotipo y assets
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="vectores">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="75"  height="75"  viewBox="0 0 24 24"  fill="#ff80c0"  class="icon icon-tabler icons-tabler-filled icon-tabler-message-chatbot"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-2.8 9.286a1 1 0 0 0 -1.414 .014a2.5 2.5 0 0 1 -3.572 0a1 1 0 0 0 -1.428 1.4a4.5 4.5 0 0 0 6.428 0a1 1 0 0 0 -.014 -1.414m-5.69 -4.286h-.01a1 1 0 1 0 0 2h.01a1 1 0 0 0 0 -2m5 0h-.01a1 1 0 0 0 0 2h.01a1 1 0 0 0 0 -2" /></svg>
+                        Consultas y mantenimiento de su sitio
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="vectores">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="48"  height="48"  viewBox="0 0 24 24"  fill="none"  stroke="#ff80c0"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-cloud-upload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" /><path d="M9 15l3 -3l3 3" /><path d="M12 12l0 9" /></svg>
+                        Alojamiento y dominio personalizado
+                    </div>
+                </div>
+            </section>
+        </section>
+        
         <!--Mis Proyectos-->
         <section class="proyectos">
-            <h2>Mi Portafolio</h2>
-            <span>En esta seccion te dejo una galeria de mis mejores 12 proyectos que abarcan distintos tipos de sitios desde paginas estaticas hasta tiendas virtuales dinamicas con tecnologias de ultima generacion.</span>
+            <h2 id="hportf">Mi Portafolio</h2>
+            <p>En esta seccion te dejo una galeria de mis mejores 12 proyectos que abarcan distintos tipos de sitios desde paginas estaticas hasta tiendas virtuales dinamicas con tecnologias de ultima generacion.</p>
 
             <div class="tarjetas">
                 <div class="grid">
-                    <h3>Landing Cafe</h3>
+                    <img src="assets/LandingCafe.jpg" alt="blog cafe" class="portada">
+                    <h3 class="proyecto">Landing Cafe</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Blog de Musica Estatico</h3>
+                    <img src="assets/MusicaBlog.jpg" alt="Blog de musica" class="portada">
+                    <h3 class="proyecto">Blog de Musica Estatico</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Portafolio Mini v1</h3>
+                    <img src="assets/MiniPortfolio.jpg" alt="portfolio" class="portada">
+                    <h3 class="proyecto">Portafolio Mini v1</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Calculadora</h3>
+                    <img src="assets/Calculadora.jpg" alt="calculadora cientifica" class="portada">
+                    <h3 class="proyecto">Calculadora</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Blog de Relojes con Galeria Modal</h3>
+                    <img src="assets/relojblog.png" alt="blog de relojes" class="portada">
+                    <h3 class="proyecto">Blog de Relojes con Galeria Modal</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Formulario Validado</h3>
+                    <img src="assets/form.png" alt="formulario" class="portada">
+                    <h3 class="proyecto">Formulario Validado</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Landing App + Tailwind</h3>
+                    <img src="assets/appTailwind.png" alt="Landing app" class="portada">
+                    <h3 class="proyecto">Landing App + Tailwind</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Tiendita De Camisas y Guayaberas</h3>
+                    <img src="assets/tienda.png" alt="tienda virtual" class="portada">
+                    <h3 class="proyecto">Tiendita De Camisas y Guayaberas</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Clon Netflix UI</h3>
+                    <img src="assets/fleflix.png" alt="fleflix" class="portada">
+                    <h3 class="proyecto">Clon Netflix UI</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>App Clima</h3>
+                    <img src="assets/climaApp.png" alt="Clima " class="portada">
+                    <h3 class="proyecto">App Clima</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Blog Dinamico</h3>
+                    <img src="assets/dinamicblog.png" alt="Blog dinamico" class="portada">
+                    <h3 class="proyecto">Blog Dinamico</h3>
                 </div>
-            </div>
-            <div class="tarjetas">
                 <div class="grid">
-                    <h3>Portafolio Premium</h3>
+                    <h3 class="proyecto">Portafolio Premium</h3>
                 </div>
             </div>
         </section>
 
+        <!--Contactame-->
         <section class="contactame">
-            <h2 class="hablemos">
-                ¿Te gustaria que tu diseño o proyecto quede al mismo nivel que estos?
-            </h2>
-            <p class="llamado">Hazme saber cuales son tus ideas de proyecto y obten una consulta gratis para convertir tu proyecto en algo increible.Si te interesa puedes rellenar y enviar el formulario que esta debajo o bien haz clic en el boton para seguirme en mis redes sociales y con gusto te apoyare en esta emocionante aventura.</p>
-
-            <button type="submit">Contactame</button>
-
+            <div class="contacto">
+                <h2 class="hablemos">¿Te gustaria que tu diseño o proyecto quede al mismo nivel que estos?</h2>
+                <p class="llamado">Hazme saber cuales son tus ideas de proyecto y obten una consulta gratis para convertir tu proyecto en algo increible.Si te interesa puedes rellenar y enviar el formulario que esta debajo o bien haz clic en el boton para seguirme en mis redes sociales y con gusto te apoyare en esta emocionante aventura.</p>
+                <button type="submit">Contactame</button>
+            </div>
+            
             <fieldset>
                 <form class="formulario" name="formulario">
-                    <h2>¿Tienes una idea</h2>
+                    <h2>¿Tienes una idea?</h2>
+                    <p>¡Agenda tu cita rapido!</p>
                     <label>Nombre:<input type="text" placeholder="Name"></label>
 
                     <label for="#">Company: <input type="text" placeholder="Company"></label>
                     <label for="#">Email: <input type="email" placeholder="Email" required></label>
                     <label for="#">Phone: <input type="number" placeholder="Phone" required></label>
-                    <input type="button" value="Entregar">
+                  
+                    <input type="button" value="Entregar" class="enviar">
                 </form>
             </fieldset>
-        
-            <img src="#" alt="Mi foto">
-            <h1>AbelVOrtuno</h1>
-            <address>Desarrollador Web Frontend</address>
+
+            <div class="miPerfil">
+                <img src="assets/miFoto.jpg" alt="mi foto" width="50px" height="50px">
+                <h1 id="user">AbelVOrtuno</h1>
+                <address id="rol">Desarrollador Web Frontend</address>
+            
+                <h2 class="llamado2">Sigueme tambien en mis redes sociales </h2>
+                <ul class="redes">
+                    <li><a href="https://github.com/AbelVOrtuno" target="_blank"><img src="assets/githubLog.png" alt="github" class="sociales"></a></li>
+                    <li><a href="https://www.facebook.com/abel.valverde.73932" target="_blank"><img src="assets/faceLog.png" alt="facebook" class="sociales"></a></li>
+                    <li><a href="https://www.instagram.com/abelv1571/" target="_blank"><img src="assets/instagramLog.jpg" alt="instagram" class="sociales"></a></li> 
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="pie">
-        <p>&copy; Diseñado y Desarrollado por AbelVOrtuno 2025</p>
+        <p class="derechos">&copy; Diseñado y Desarrollado por AbelVOrtuno 2025</p>
     </footer>
 </body>
 </html>
